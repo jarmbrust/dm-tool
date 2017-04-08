@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
     <app-header></app-header>
     <router-view></router-view>
   </div>
@@ -24,6 +23,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #222;
   /*margin-top: 60px;*/
+}
+body {
+  background-color: #222;
 }
 </style>
