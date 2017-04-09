@@ -85,6 +85,23 @@
         }
         this.points = 27
       }
+    },
+//    computed: {
+//      getRaceBonus () {
+//        this.raceBonus = this.$store.getRaceBonuses()
+//        console.log('>>', this.raceBonus)
+//      }
+//    },
+    watch: {
+      getRaceBonus () {
+        this.raceBonus = this.$store.getRaceBonuses()
+        this.$store.watch()
+
+        console.log('>>', this.raceBonus)
+      },
+      getRace () {
+        this.race = this.$store.getRace()
+      }
     }
   }
 </script>

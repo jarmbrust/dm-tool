@@ -18,6 +18,11 @@
   import Descriptions from './playerStats/Descriptions.vue'
 
   export default {
+    data () {
+      return {
+        race: ''
+      }
+    },
     components: {
       appAbilities: Abilities,
       appRace: Race,
