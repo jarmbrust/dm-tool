@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51380ff2-1fe4-4118-b246-a022130d78da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PlayerStatTool.vue" afterPath="$PROJECT_DIR$/src/components/PlayerStatTool.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/playerStats/Abilities.vue" afterPath="$PROJECT_DIR$/src/components/playerStats/Abilities.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/store.js" afterPath="$PROJECT_DIR$/src/store/store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/playerStats/Race.vue" afterPath="$PROJECT_DIR$/src/components/playerStats/Race.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,11 +63,10 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="85">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#140#161#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +85,8 @@
       <file leaf-file-name="raceAbilities.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/modules/raceAbilities.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -119,8 +117,8 @@
       <file leaf-file-name="Race.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/playerStats/Race.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="408">
+              <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -155,15 +153,15 @@
         <option value="$PROJECT_DIR$/src/router/routes.js" />
         <option value="$PROJECT_DIR$/src/components/Header.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/components/playerStats/Race.vue" />
         <option value="$PROJECT_DIR$/src/components/PlayerStatTool.vue" />
         <option value="$PROJECT_DIR$/src/components/playerStats/Abilities.vue" />
         <option value="$PROJECT_DIR$/src/data/raceData.js" />
         <option value="$PROJECT_DIR$/src/store/modules/raceAbilities.js" />
         <option value="$PROJECT_DIR$/src/store/store.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/playerStats/Race.vue" />
       </list>
     </option>
   </component>
@@ -447,12 +445,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491656875883</updated>
-      <workItem from="1491656877235" duration="34755000" />
+      <workItem from="1491656877235" duration="34930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34755000" />
+    <option name="totallyTimeSpent" value="34930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,17 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -649,18 +636,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/modules/raceAbilities.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="187">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/playerStats/Race.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="408">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding />
         </state>
       </provider>

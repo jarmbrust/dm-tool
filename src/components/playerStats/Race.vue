@@ -33,11 +33,11 @@
         this.selectedRace = race
         let bonusArray = this.raceBonus[this.selectedRace] ? this.raceBonus[this.selectedRace] : this.raceBonus['Default']
         this.$store.commit({
-          type: 'setRace',
+          type: 'SET_RACE',
           race: race
         })
         this.$store.commit({
-          type: 'setBonusArray',
+          type: 'SET_BONUS_ARRAY',
           bonusArray: bonusArray
         })
       }
