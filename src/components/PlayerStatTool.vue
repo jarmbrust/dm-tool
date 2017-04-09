@@ -5,6 +5,9 @@
       <div class="ability col-md-6 col-md-offset-1">
         <app-abilities></app-abilities>
       </div>
+      <div class="col-md-5">
+        <app-race class="race"></app-race>
+      </div>
     </div>
   </div>
 </template>
@@ -18,7 +21,7 @@
     components: {
       appAbilities: Abilities,
       appRace: Race,
-      appRaceDescription: Descriptions
+      appDescriptions: Descriptions
     }
   }
 </script>
@@ -26,5 +29,8 @@
 <style scoped>
   body {
     background-color: #222;
+  }
+  .race {
+    float: left;
   }
 </style>

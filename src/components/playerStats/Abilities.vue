@@ -28,6 +28,9 @@
         </tr>
       </tbody>
     </table>
+    <div class="points-text">Points: <span class="total-points">{{ points }} </span>
+      <button class="btn btn-primary reset" type="button" @click="resetStats">Reset Stats</button>
+    </div>
   </div>
 </template>
 
@@ -82,12 +85,6 @@
           this.abilities[key] = 8
         }
         this.points = 27
-      },
-      selectedRace (race, bonus) {
-        this.race = race
-        for (var stat in this.raceBonus) {
-          this.raceBonus[stat] = bonus[stat]
-        }
       }
     }
   }
@@ -140,6 +137,7 @@
   .table th {
     color: #EEE;
     padding-top: 14px;
+    text-align: center;
   }
   .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
     background-color: #333;

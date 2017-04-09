@@ -5,6 +5,12 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    selectRace: ''
+    selectedRace: '',
+    raceBonusArray: {'Str': 0, 'Dex': 0, 'Con': 0, 'Int': 0, 'Wis': 0, 'Chr': 0}
+  },
+  mutations: {
+    setRace (state, payload) {
+      state.selectedRace = payload.race
+    }
   }
 })
