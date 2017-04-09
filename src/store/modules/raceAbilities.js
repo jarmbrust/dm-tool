@@ -16,7 +16,7 @@ const mutations = {
 
 const actions = {
   selectRace: ({commit}, payload) => {
-    commit()
+    commit('SET_RACE', payload)
   },
   initRace: ({commit}) => {
     commit('SET_RACE', state.selectedRace)
@@ -24,8 +24,11 @@ const actions = {
 }
 
 const getters = {
-  selected: state => {
+  selectedRace: state => {
     return state.selectedRace
+  },
+  raceBonusArray: state => {
+    return state.raceBonusArray
   }
 }
 

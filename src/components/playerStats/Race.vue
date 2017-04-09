@@ -32,9 +32,10 @@
       selectRace (race) {
         this.selectedRace = race
         let bonusArray = this.raceBonus[this.selectedRace] ? this.raceBonus[this.selectedRace] : this.raceBonus['Default']
+        this.$store.dispatch('selectRace', this.selectedRace)
         this.$store.commit({
           type: 'SET_RACE',
-          race: race
+          race: this.selectedRace
         })
         this.$store.commit({
           type: 'SET_BONUS_ARRAY',
@@ -42,6 +43,11 @@
         })
       }
     }
+//    computed: {
+//      selectedRace () {
+//        return this.$store.getters.selectedRace
+//      }
+//    }
   }
 </script>
 

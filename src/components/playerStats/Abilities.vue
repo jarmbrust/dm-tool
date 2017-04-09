@@ -35,6 +35,8 @@
 </template>
 
 <script>
+  import { mapActions } from 'vuex'
+
   export default {
     data () {
       return {
@@ -70,6 +72,9 @@
       }
     },
     methods: {
+      ...mapActions([
+        'selectedRace'
+      ]),
       selected (value, index) {
         this.adjustPoints(value, index)
         this.abilities[index] = value
@@ -84,25 +89,32 @@
           this.abilities[key] = 8
         }
         this.points = 27
+        this.race = this.selectedRace()
+        console.log('test', this.race)
+      },
+      selectedRace () {
+//        this.race = this.selectedRace()
+        console.log('test', this.race)
       }
-    },
+    }
 //    computed: {
 //      getRaceBonus () {
 //        this.raceBonus = this.$store.getRaceBonuses()
 //        console.log('>>', this.raceBonus)
 //      }
 //    },
-    watch: {
-      getRaceBonus () {
-        this.raceBonus = this.$store.getRaceBonuses()
-        this.$store.watch()
-
-        console.log('>>', this.raceBonus)
-      },
-      getRace () {
-        this.race = this.$store.getRace()
-      }
-    }
+//    computed: {
+//      getRaceBonus () {
+//        this.raceBonus = this.$store.getRaceBonuses()
+//        this.$store.watch()
+//
+//        console.log('>>', this.raceBonus)
+//      },
+//      getRace () {
+//        this.race = this.$store.selectedRace()
+//        console.log('>>> ', this.race)
+//      }
+//    }
   }
 </script>
 
