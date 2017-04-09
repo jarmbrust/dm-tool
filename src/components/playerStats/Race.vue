@@ -32,15 +32,13 @@
       selectRace (race) {
         this.selectedRace = race
         let bonusArray = this.raceBonus[this.selectedRace] ? this.raceBonus[this.selectedRace] : this.raceBonus['Default']
-        console.log('race', race)
-       // race = this.raceBonus[this.selectedRace] ? race : 'Select "sub-race"'
-    //   this.$emit('selectedRace', race, bonusArray)
-        this.$store.state.raceBonusArray = bonusArray
-//        this.$store.state.selectedRace = race
-
         this.$store.commit({
           type: 'setRace',
           race: race
+        })
+        this.$store.commit({
+          type: 'setBonusArray',
+          bonusArray: bonusArray
         })
       }
     }

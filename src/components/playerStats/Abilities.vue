@@ -77,7 +77,6 @@
       adjustPoints (value, index) {
         let currentValue = this.abilityCost[this.abilities[index]]
         let valueAdj = this.abilityCost[value]
-        //   let pointCost = currentValue - valueAdj
         this.points += currentValue - valueAdj
       },
       resetStats () {

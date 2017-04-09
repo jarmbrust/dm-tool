@@ -11,6 +11,14 @@ export const store = new Vuex.Store({
   mutations: {
     setRace (state, payload) {
       state.selectedRace = payload.race
+    },
+    setBonusArray (state, payload) {
+      state.raceBonusArray = payload.bonusArray
+    }
+  },
+  getters: {
+    getRaceBonuses: state => {
+      return state.raceBonusArray
     }
   }
 })
