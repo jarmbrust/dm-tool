@@ -28,7 +28,7 @@
         </tr>
       </tbody>
     </table>
-    <div><span class="points-text">Points:</span> <span class="total-points">{{ points }} </span>
+    <div><span class="points-text">Points:</span> <span class="total-points" :class="{ 'negative-pts': belowZero }">{{ points }} </span>
       <button class="btn btn-primary reset" type="button" @click="resetStats">Reset Stats</button>
       <div class="race"> {{ race }} </div>
       <app-race class="race-button"></app-race>
@@ -87,6 +87,9 @@
       },
       raceBonus () {
         return this.$store.getters.raceBonusArray
+      },
+      belowZero () {
+        return this.points < 0
       }
     },
     components: {
@@ -142,6 +145,9 @@
     font-size: 20px;
     font-weight: bold;
     color: #EEE;
+  }
+  .negative-pts {
+    color: red;
   }
   .score,
   .race-bonus,
