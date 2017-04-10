@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51380ff2-1fe4-4118-b246-a022130d78da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Hello.vue" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PetPictures.vue" afterPath="$PROJECT_DIR$/src/components/PetPictures.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PlayerStatTool.vue" afterPath="$PROJECT_DIR$/src/components/PlayerStatTool.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/playerStats/Abilities.vue" afterPath="$PROJECT_DIR$/src/components/playerStats/Abilities.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/playerStats/Race.vue" afterPath="$PROJECT_DIR$/src/components/playerStats/Race.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/modules/raceAbilities.js" afterPath="$PROJECT_DIR$/src/store/modules/raceAbilities.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +22,8 @@
       <file leaf-file-name="Abilities.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/playerStats/Abilities.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+            <state relative-caret-position="584">
+              <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -46,8 +42,8 @@
       <file leaf-file-name="raceAbilities.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/modules/raceAbilities.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="442">
+              <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -56,10 +52,10 @@
       <file leaf-file-name="PlayerStatTool.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PlayerStatTool.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="136">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="46" />
               <folding>
-                <element signature="e#316#367#0" expanded="true" />
+                <element signature="e#323#374#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +74,8 @@
       <file leaf-file-name="Race.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/playerStats/Race.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+            <state relative-caret-position="748">
+              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -156,14 +152,14 @@
         <option value="$PROJECT_DIR$/src/components/Header.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/components/PlayerStatTool.vue" />
         <option value="$PROJECT_DIR$/src/data/raceData.js" />
         <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/PetPictures.vue" />
-        <option value="$PROJECT_DIR$/src/components/playerStats/Race.vue" />
         <option value="$PROJECT_DIR$/src/store/modules/raceAbilities.js" />
+        <option value="$PROJECT_DIR$/src/components/playerStats/Race.vue" />
+        <option value="$PROJECT_DIR$/src/components/PlayerStatTool.vue" />
         <option value="$PROJECT_DIR$/src/components/playerStats/Abilities.vue" />
       </list>
     </option>
@@ -351,7 +347,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vuecoursework/project-final-finished" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -448,12 +444,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491656875883</updated>
-      <workItem from="1491656877235" duration="39249000" />
+      <workItem from="1491656877235" duration="43122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39249000" />
+    <option name="totallyTimeSpent" value="43122000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,6 +587,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PetPictures.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -599,10 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/playerStats/Descriptions.vue">
+    <entry file="file://$PROJECT_DIR$/src/store/modules/raceAbilities.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -615,52 +627,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PlayerStatTool.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="46" />
           <folding>
-            <element signature="e#316#367#0" expanded="true" />
+            <element signature="e#323#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PetPictures.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/playerStats/Descriptions.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/playerStats/Race.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/modules/raceAbilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="748">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/playerStats/Abilities.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        <state relative-caret-position="584">
+          <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
           <folding />
         </state>
       </provider>

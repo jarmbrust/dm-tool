@@ -43,11 +43,6 @@
         })
       }
     }
-//    computed: {
-//      selectedRace () {
-//        return this.$store.getters.selectedRace
-//      }
-//    }
   }
 </script>
 

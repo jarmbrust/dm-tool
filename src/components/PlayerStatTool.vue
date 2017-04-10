@@ -6,7 +6,7 @@
         <app-abilities></app-abilities>
       </div>
       <div class="col-md-5">
-        <app-race class="race"></app-race>
+        <!--<app-race class="race"></app-race>-->
       </div>
     </div>
   </div>
@@ -14,7 +14,6 @@
 
 <script>
   import Abilities from './playerStats/Abilities.vue'
-  import Race from './playerStats/Race.vue'
   import Descriptions from './playerStats/Descriptions.vue'
 
   export default {
@@ -25,7 +24,6 @@
     },
     components: {
       appAbilities: Abilities,
-      appRace: Race,
       appDescriptions: Descriptions
     }
   }
