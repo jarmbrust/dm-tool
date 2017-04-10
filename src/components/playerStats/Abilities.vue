@@ -50,14 +50,6 @@
           'Wis': 8,
           'Chr': 8
         },
-        raceBonus: {
-          'Str': 0,
-          'Dex': 0,
-          'Con': 0,
-          'Int': 0,
-          'Wis': 0,
-          'Chr': 0
-        },
         points: 27,
         abilityCost: {
           8: 0,
@@ -83,7 +75,7 @@
         this.points += currentValue - valueAdj
       },
       resetStats () {
-        for (var key in this.abilities) {
+        for (let key in this.abilities) {
           this.abilities[key] = 8
         }
         this.points = 27
@@ -92,6 +84,9 @@
     computed: {
       race () {
         return this.$store.getters.selectedRace
+      },
+      raceBonus () {
+        return this.$store.getters.raceBonusArray
       }
     },
     components: {
@@ -121,12 +116,6 @@
   }
   .race-button {
     float: left;
-  }
-  .selected-race {
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px;
-    color: #EEE;
   }
   .total-score {
     font-weight: bold;
