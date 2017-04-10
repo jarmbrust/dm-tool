@@ -28,10 +28,17 @@
         </tr>
       </tbody>
     </table>
+    <div><span class="points-text">Points:</span> <span class="total-points" :class="{ 'negative-pts': belowZero }">{{ points }} </span>
+      <button class="btn btn-primary reset" type="button" @click="resetStats">Reset Stats</button>
+      <div class="race"> {{ race }} </div>
+      <app-race class="race-button"></app-race>
+    </div>
   </div>
 </template>
 
 <script>
+  import Race from './Race.vue'
+
   export default {
     data () {
       return {
@@ -42,14 +49,6 @@
           'Int': 8,
           'Wis': 8,
           'Chr': 8
-        },
-        raceBonus: {
-          'Str': 0,
-          'Dex': 0,
-          'Con': 0,
-          'Int': 0,
-          'Wis': 0,
-          'Chr': 0
         },
         points: 27,
         abilityCost: {
@@ -62,8 +61,7 @@
           14: 7,
           15: 9
         },
-        adjustAbility: true,
-        race: ''
+        adjustAbility: true
       }
     },
     methods: {
@@ -74,21 +72,28 @@
       adjustPoints (value, index) {
         let currentValue = this.abilityCost[this.abilities[index]]
         let valueAdj = this.abilityCost[value]
-        //   let pointCost = currentValue - valueAdj
         this.points += currentValue - valueAdj
       },
       resetStats () {
-        for (var key in this.abilities) {
+        for (let key in this.abilities) {
           this.abilities[key] = 8
         }
         this.points = 27
-      },
-      selectedRace (race, bonus) {
-        this.race = race
-        for (var stat in this.raceBonus) {
-          this.raceBonus[stat] = bonus[stat]
-        }
       }
+    },
+    computed: {
+      race () {
+        return this.$store.getters.selectedRace
+      },
+      raceBonus () {
+        return this.$store.getters.raceBonusArray
+      },
+      belowZero () {
+        return this.points < 0
+      }
+    },
+    components: {
+      appRace: Race
     }
   }
 </script>
@@ -108,21 +113,27 @@
     color: #EEE;
   }
   .reset {
-    margin: 2px;
+    margin: 5px;
+    margin-left: 15px;
+    float: left;
   }
-  .selected-race {
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px;
-    color: #EEE;
+  .race-button {
+    float: left;
   }
-  .total-score,
-  .total-points  {
+  .total-score {
     font-weight: bold;
     font-size: 22px;
     padding: 10px;
     color: #EEE;
   }
+  .total-points  {
+    font-weight: bold;
+    font-size: 26px;
+    padding: 5px;
+    color: #EEE;
+    float: left;
+  }
+  .race,
   .stat-bonus {
     font-weight: bold;
     font-size: 18px;
@@ -135,11 +146,15 @@
     font-weight: bold;
     color: #EEE;
   }
+  .negative-pts {
+    color: red;
+  }
   .score,
   .race-bonus,
   .table th {
     color: #EEE;
     padding-top: 14px;
+    text-align: center;
   }
   .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
     background-color: #333;

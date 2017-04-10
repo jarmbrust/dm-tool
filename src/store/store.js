@@ -1,10 +1,12 @@
 import Vue from 'vue'
+// import Vuex from 'vuex'
 import Vuex from 'vuex'
+import raceAbilities from './modules/raceAbilities'
 
 Vue.use(Vuex)
 
-export const store = new Vuex.Store({
-  state: {
-    selectRace: ''
+export default new Vuex.Store({
+  modules: {
+    raceAbilities
   }
 })

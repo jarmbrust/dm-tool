@@ -12,7 +12,10 @@
     components: {
       appHeader: Header
     },
-    name: 'app'
+    name: 'app',
+    created () {
+      this.$store.dispatch('initRace')
+    }
   }
 </script>
 
