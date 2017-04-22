@@ -23,6 +23,10 @@ export default new Router({
       path: '/PetPictures',
       name: 'Pet Pictures',
       component: PetPictures
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ]
 })
